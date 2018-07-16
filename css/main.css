@@ -97,14 +97,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*   HEADER   */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+}
+.nav-link {
+  color: white;
+}
+a:hover {
+  color: gray;
+}
 
+   /*  PRESENTATION   */
+p {
+  margin: 15%;
+  margin-top: 20%;
+  padding: 5%;
+  border: dashed black 5px;
+  text-align: center;
+}
 
+   /*   REALISATIONS   */
+.realisations {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+div.realisations>div {
+  margin: 5%;
+  padding: 100px 25px;
+  border-radius: 25px;
+  width: 30%;
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
 
+   /*   FORM   */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+input, textarea {
+  margin: 5px 0;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: solid 1px black;
+  max-width: 450px;
+  width: 75%;
+  max-height:
+}
+textarea {
+  min-height: 105px;
+  max-height: 105px;
+}
 
-
-
-
-
+.logos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+div.logos>img {
+  margin: 15px 10px 10px;
+  max-width: 50px;
+}
 
 
 
@@ -199,9 +263,19 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 576px) {
+
 }
+@media only screen and (min-width: 768px) {
+  p {
+    margin: 15% 20%;
+  }
+}
+@media only screen and (min-width: 992px) {
+
+}
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
