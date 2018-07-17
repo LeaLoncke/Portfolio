@@ -108,15 +108,23 @@ textarea {
   color: white;
 }
 a:hover {
+  text-decoration: none;
   color: gray;
 }
 
    /*  PRESENTATION   */
+.about {
+  height: 5%;
+}
 p {
   margin: 15%;
-  margin-top: 20%;
   padding: 5%;
   border: dashed black 5px;
+  text-align: center;
+}
+
+   /*   H1   */
+h1 {
   text-align: center;
 }
 
@@ -129,13 +137,22 @@ p {
 }
 div.realisations>div {
   margin: 5%;
-  padding: 100px 25px;
-  border-radius: 25px;
-  width: 30%;
+  padding: 2%;
+  width: 80%;
   background-color: black;
   text-align: center;
-  font-size: 30px;
   color: white;
+}
+div.archiduchesse>a {
+  font-size: 20px;
+  color: white;
+}
+div.archiduchesse>a>img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+h2 {
+  font-size: 20px;
 }
 
    /*   FORM   */
@@ -165,7 +182,7 @@ textarea {
   justify-content: center;
   width: 100%;
 }
-div.logos>img {
+div.logos>a>img {
   margin: 15px 10px 10px;
   max-width: 50px;
 }
@@ -265,13 +282,28 @@ div.logos>img {
 
 @media only screen and (min-width: 576px) {
 
+  div.realisations>div {
+    margin: 2%;
+    width: 45%;
+  }
+
 }
 @media only screen and (min-width: 768px) {
+
   p {
     margin: 15% 20%;
   }
+
+  div.realisations>div {
+    width: 40%;
+  }
+
 }
 @media only screen and (min-width: 992px) {
+
+  div.realisations>div {
+    width: 35%;
+  }
 
 }
 
